@@ -11,7 +11,7 @@ track.addEventListener('mouseleave', () => {
 });
 
 // Permet le scroll manuel horizontal (optionnel si besoin)
-track.style.cursor = 'grab';
+//track.style.cursor = 'grab';
 let isDown = false;
 let startX, scrollLeft;
 
@@ -19,17 +19,17 @@ track.addEventListener('mousedown', (e) => {
     isDown = true;
     startX = e.pageX - track.offsetLeft;
     scrollLeft = track.scrollLeft;
-    track.style.cursor = 'grabbing';
+    //track.style.cursor = 'grabbing';
 });
 
 track.addEventListener('mouseleave', () => {
     isDown = false;
-    track.style.cursor = 'grab';
+    //track.style.cursor = 'grab';
 });
 
 track.addEventListener('mouseup', () => {
     isDown = false;
-    track.style.cursor = 'grab';
+    //track.style.cursor = 'grab';
 });
 
 track.addEventListener('mousemove', (e) => {
