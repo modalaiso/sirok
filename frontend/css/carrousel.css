@@ -1,0 +1,36 @@
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+    -webkit-mask-image: linear-gradient(to right, transparent 20%, black 55%, black 55%, transparent 80%);
+    mask-image: linear-gradient(to right, transparent 20%, black 55%, black 55%, transparent 80%);
+}
+
+.carousel-track {
+    display: flex;
+    width: fit-content;
+    animation: scroll 30s linear infinite;
+}
+
+.carousel-track img {
+    width: 250px;
+    height: auto;
+    flex-shrink: 0;
+    margin-right: 45px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+/* Animation infinie */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Scroll manuel en mobile */
+.carousel-container::-webkit-scrollbar {
+    display: none;
+}

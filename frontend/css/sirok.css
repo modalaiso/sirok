@@ -9,7 +9,8 @@
     --b-color: #101010;
     --t-color: #f2f2f2;
     --f-title: 'Cormorant', serif;
-    --f-text: 'Arapey' serif;  
+    --f-text: 'Arapey' serif; 
+    --f-primary: 'Dream Avenue', serif;
 }
 
 body {
@@ -23,6 +24,7 @@ a {
     font-family: var(--f-title);
 }
 
+/*Hero*/
 .hero_section {
     background: linear-gradient(to right, #101010, #101010, #00000000), 
                 url(../assets/img/banner1.jpg) no-repeat center center fixed;
@@ -103,6 +105,10 @@ h1 {
     cursor: pointer;
 }
 
+section {
+    margin-top: 80px;
+}
+
 .h2_title {
     color: var(--t-color);
     font-family: var(--f-title);
@@ -110,6 +116,10 @@ h1 {
     font-weight: 500;
     margin: 20px 0 0 0;
     text-align: center;
+}
+
+h2 {
+    font-weight: 100;
     z-index: 3;
 }
 
@@ -123,6 +133,7 @@ h1 {
     z-index: 2;
 }
 
+/*about*/
 .about_content {
     display: flex;
     align-items: center;
@@ -139,4 +150,47 @@ h1 {
     max-width: 205px;
     width: 100%;
     height: auto;
+}
+
+/*menu*/
+.menu_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*see more button*/
+.button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    border-radius: 10px;
+    border: none;
+    overflow: hidden;
+    background: transparent;
+    color: #fff;
+    font-family: var(--f-primary);
+    font-weight: lighter;
+}
+  
+.button-text {
+    transform: translateX(15px);
+    font-size: 1.5em;
+    font-weight: 700;
+    transition-duration: 0.3s;
+    font-weight: 200;
+}
+  
+.iconer {
+    transform: translateY(35px);
+    transition-duration: 0.3s;
+}
+  
+.button:hover .button-text {
+    transform: translateX(0px);
+}
+  
+.button:hover .iconer {
+    transform: translateY(0px);
 }
