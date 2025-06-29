@@ -109,7 +109,7 @@
                 </div>
             </div>
         </section>
-        <script>
+        <!--<script>
             const header = document.querySelector('header');
             const aboutSection = document.querySelector('#about');
         
@@ -122,6 +122,17 @@
                     header.classList.remove('header_blur');
                 }
             });
-        </script>        
+        </script>-->
+        <script>
+            const header = document.querySelector('header');
+        
+            window.addEventListener('scroll', () => {
+                if (window.scrollY >= 125) {
+                    header.classList.add('header_blur');
+                } else {
+                    header.classList.remove('header_blur');
+                }
+            });
+        </script>           
     </body>
 </html>
