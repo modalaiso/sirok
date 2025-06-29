@@ -85,6 +85,7 @@ h1 {
 }
 
 .cta_btn {
+    position: relative;
     border: #c58030 solid 5px;
     width: 220px;
     height: 50px;
@@ -126,10 +127,11 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 100px;
 }
 
 .content {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .about_img {

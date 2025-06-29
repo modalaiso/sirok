@@ -59,7 +59,7 @@
         <section class="about_section" id="about">
             <div class="about_wrapper">
                 <h2 class="h2_title">À propos de Sirok</h2>
-                <div class="about_content content">
+                <div class="about_content">
                     <div style="display: flex; justify-content: center; margin-right: 120px;">
                         <p class="p_c">Plus qu’un lounge, un art de vivre à Abidjan.</p>
                     </div>
@@ -127,7 +127,7 @@
             const header = document.querySelector('header');
         
             window.addEventListener('scroll', () => {
-                if (window.scrollY >= 125) {
+                if (window.scrollY >= 100) {
                     header.classList.add('header_blur');
                 } else {
                     header.classList.remove('header_blur');
