@@ -2,13 +2,13 @@
 const track = document.querySelector('.carousel-track');
 
 // Pause l'animation quand on survole
-track.addEventListener('mouseenter', () => {
-    track.style.animationPlayState = 'paused';
-});
+//track.addEventListener('mouseenter', () => {
+    //track.style.animationPlayState = 'paused';
+//});
 
-track.addEventListener('mouseleave', () => {
-    track.style.animationPlayState = 'running';
-});
+//track.addEventListener('mouseleave', () => {
+    //track.style.animationPlayState = 'running';
+//});
 
 // Permet le scroll manuel horizontal (optionnel si besoin)
 //track.style.cursor = 'grab';
