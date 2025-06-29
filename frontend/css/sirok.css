@@ -87,10 +87,10 @@ h1 {
 .cta_btn {
     position: relative;
     border: #c58030 solid 5px;
-    width: 220px;
-    height: 50px;
+    width: 225px;
+    height: 55px;
     border-radius: 500px;
-    background-image: linear-gradient(to right, #c58030, #c5803085);
+    background: linear-gradient(to right, #c58030, #c5803085);
     color: var(--t-color);
     font-family: var(--f-text);
     font-size: 1.2em;
