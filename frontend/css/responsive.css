@@ -58,8 +58,8 @@
     }
 
     .carousel-container {
-        -webkit-mask-image: linear-gradient(to right, transparent 10%, black 55%, black 55%, transparent 90%);
-        mask-image: linear-gradient(to right, transparent 10%, black 55%, black 55%, transparent 90%);
+        -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 50%, transparent 100%);
+        mask-image: linear-gradient(to right, transparent 0%, black 10%, black 50%, transparent 100%);
     }
 
     .fp {
