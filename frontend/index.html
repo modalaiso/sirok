@@ -209,7 +209,9 @@
             <div class="footer_wrapper">
                 <div class="footer_content">
                     <div class="footer_logo">
-                        <img src="assets/img/logo.png" alt="Sirok" class="fli">
+                        <a href="/">
+                            <img src="assets/img/logo.png" alt="Sirok" class="fli">
+                        </a>
                     </div>
                     <div style="display: flex; gap: 10px;" class="social-links">
                         <a href="https://www.instagram.com/sirok.lounge.ci/" target="_blank" title="Instagram">
@@ -304,7 +306,7 @@
             const header = document.querySelector('header');
         
             window.addEventListener('scroll', () => {
-                if (window.scrollY >= 100) {
+                if (window.scrollY >= 50) {
                     header.classList.add('header_blur');
                 } else {
                     header.classList.remove('header_blur');
