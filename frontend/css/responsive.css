@@ -4,10 +4,6 @@
 
 /*responsive phone*/
 @media screen and (max-width: 884px) {
-    ::-webkit-scrollbar {
-        width: 0px !important;
-        height: 0px !important;
-    }
 
     .header {
         margin: 0 50px;
@@ -116,6 +112,11 @@
 }
 
 @media (max-width: 768px) {
+    ::-webkit-scrollbar {
+        width: 0px !important;
+        height: 0px !important;
+    }
+    
     .header {
         margin: 0 25px;
     }
