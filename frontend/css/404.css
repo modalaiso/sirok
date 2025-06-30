@@ -18,7 +18,7 @@ body {
 .error-code {
     font-size: 10em;
     font-weight: 700;
-    color: #c6a664; /* or #d4af37 for doré */
+    color: #c58030; /* or #d4af37 for doré */
     text-shadow: 0 0 10px rgba(198, 166, 100, 0.2);
 }
   
@@ -36,11 +36,11 @@ body {
 .lux-button {
     display: inline-block;
     padding: 12px 30px;
-    border: 2px solid #c6a664;
+    border: 2px solid #c58030;
     border-radius: 50px;
     color: #f2f2f2;
     text-decoration: none;
-    background: linear-gradient(to right, #c6a664, #a57c2b);
+    background: linear-gradient(to right, #c58030, #a56b28);
     font-weight: 500;
     box-shadow: inset 0 0 10px rgba(198, 166, 100, 0.4);
     transition: all 0.3s ease;
@@ -48,6 +48,6 @@ body {
   
 .lux-button:hover {
     background: transparent;
-    color: #c6a664;
+    color: #c58030;
     box-shadow: 0 0 10px rgba(198, 166, 100, 0.5);
 }  
