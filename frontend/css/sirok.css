@@ -31,6 +31,10 @@ a {
     background-size: cover;
 }
 
+.hl {
+    margin: 25px 0;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -42,7 +46,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 25px 150px 25px 150px;
+    margin: 0 150px;
 }
 
 .header_blur {
@@ -62,6 +66,10 @@ header .header_logo {
     gap: 70px;
     list-style: none;
     font-size: 1.3em;
+}
+
+.menu_toggle {
+    display: none;
 }
 
 h1 {
@@ -243,14 +251,23 @@ h2 {
     font-size: 1.2em;
     color: var(--t-color);
     font-weight: lighter;
+    padding: 5px;
 }
 
 .fp {
     display: flex;
-    gap: 100px;
+    gap: 150px;
 }
 
 .f_localisation {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nnl-l {
+    gap: 10px;
+    display: flex;
     align-items: center;
 }
 
@@ -265,6 +282,24 @@ hr {
 	height: 2px;
 	background: linear-gradient(-45deg, transparent, #808080, transparent);
 }
+
 footer {
     margin-bottom: 20px;
+}
+
+.fh2 {
+    text-align: start;
+}
+
+.svg {
+    color: #b3b3b3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    border: none;
+    width: 22px;
+    height: 22px;
+    background: linear-gradient(223deg, black, #1f1f1f);
+    box-shadow: inset 0px 0px 5px #4c4c4c;
 }

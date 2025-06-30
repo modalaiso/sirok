@@ -1,12 +1,25 @@
+:root {
+    --t-color: #f2f2f2;
+}
+
 /*responsive phone*/
 @media screen and (max-width: 480px) {
-    .nav_list {
+    .header {
+        margin: 0 25px;
+    }
+    
+    .header_nav {
         display: none;
     }
 
     h1 {
         font-size: 3.5em;
         text-align: center;
+    }
+
+    .menu_toggle {
+        display: flex;
+        color: var(--t-color);
     }
 
     .hero_wrapper {
@@ -45,14 +58,39 @@
     }
 
     .carousel-container {
-        overflow: hidden;
-        position: relative;
         -webkit-mask-image: linear-gradient(to right, transparent 10%, black 55%, black 55%, transparent 90%);
         mask-image: linear-gradient(to right, transparent 10%, black 55%, black 55%, transparent 90%);
     }
 
     .fp {
         flex-wrap: wrap;
-        flex-direction: column-reverse;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    hr {
+        margin: 0 5vh 3vh 5vh;
+        border: none;
+        height: 2px;
+        background: linear-gradient(-45deg, transparent, #808080, transparent);
+    }
+
+    .fh2 {
+        text-align: center;
+        font-size: 1.9em !important;
+    }
+
+    .nnl {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nnl-l {
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
