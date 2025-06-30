@@ -200,7 +200,6 @@ h2 {
     align-items: center;
     gap: 10px;
     padding: 0;
-    border-radius: 10px;
     border: none;
     overflow: hidden;
     background: transparent;
@@ -300,6 +299,6 @@ footer {
     border: none;
     width: 22px;
     height: 22px;
-    background: linear-gradient(223deg, black, #1f1f1f);
-    box-shadow: inset 0px 0px 5px #4c4c4c;
+    background: linear-gradient(223deg, #000000, #1f1f1f);
+    box-shadow: inset 0px 0px 5px #545454;
 }
