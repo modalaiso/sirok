@@ -57,7 +57,7 @@ header .header_logo {
     height: auto;
 }
 
-ul {
+.nav_list {
     display: flex;
     gap: 70px;
     list-style: none;
@@ -216,4 +216,51 @@ h2 {
   
 .button:hover .iconer {
     transform: translateY(0px);
+}
+
+.fli {
+    width: 150px;
+    height: auto;
+    filter: brightness(0) invert(1)
+}
+
+.footer_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.nnl {
+    list-style: none;
+    font-size: 1.2em;
+    color: var(--t-color);
+    font-weight: lighter;
+}
+
+.fp {
+    display: flex;
+    gap: 100px;
+}
+
+.f_localisation {
+    align-items: center;
+}
+
+iframe {
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+hr {
+	margin: 0 12vh 3vh 12vh;
+	border: none;
+	height: 2px;
+	background: linear-gradient(-45deg, transparent, #808080, transparent);
+}
+footer {
+    margin-bottom: 20px;
 }
