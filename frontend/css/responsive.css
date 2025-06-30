@@ -3,9 +3,14 @@
 }
 
 /*responsive phone*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 884px) {
+    ::-webkit-scrollbar {
+        width: 0px !important;
+        height: 0px !important;
+    }
+
     .header {
-        margin: 0 30px;
+        margin: 0 50px;
     }
     
     /*.header_nav {
@@ -25,6 +30,10 @@
     .menu_toggle {
         display: flex;
         color: var(--t-color);
+    }
+
+    .nav_list {
+        gap: 20px;
     }
 
     .hero_wrapper {
@@ -107,6 +116,10 @@
 }
 
 @media (max-width: 768px) {
+    .header {
+        margin: 0 25px;
+    }
+
     .menu_toggle {
         display: block;
         position: fixed;
@@ -157,6 +170,12 @@
         align-items: center;
         justify-content: center;
     }
+
+    .no-scroll {
+        overflow: hidden;
+        height: 100vh;
+    }
+    
 
     .mobile_nav.active {
         transform: translateY(0);
