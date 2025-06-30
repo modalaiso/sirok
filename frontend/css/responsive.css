@@ -5,12 +5,12 @@
 /*responsive phone*/
 @media screen and (max-width: 768px) {
     .header {
-        margin: 0 25px;
+        margin: 0 30px;
     }
     
-    .header_nav {
+    /*.header_nav {
         display: none;
-    }
+    }*/
 
     .hero_section {
         background: url(../assets/img/banner.jpg) no-repeat center center fixed;
@@ -97,5 +97,93 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+}
+
+/* Masquer le menu toggle par défaut */
+.menu_toggle,
+.mobile_nav {
+  display: none;
+}
+
+@media (max-width: 768px) {
+    .menu_toggle {
+        display: block;
+        position: fixed;
+        right: 25px;
+        z-index: 1001;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .menu_toggle svg {
+        width: 100%;
+        height: 100%;
+        color: var(--t-color);
+        transition: opacity 0.3s ease;
+    }
+
+    .close_icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .menu_toggle.active .burger_icon {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .menu_toggle.active .close_icon {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .mobile_nav {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(16, 16, 16, 1);
+        backdrop-filter: blur(10px);
+        transform: translateY(-100%);
+        transition: transform 0.4s ease;
+        z-index: 1000;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile_nav.active {
+        transform: translateY(0);
+    }
+
+    .mobile_nav_list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .mobile_nav_list li a {
+        font-family: var(--f-title);
+        color: var(--t-color);
+        font-size: 2em;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .mobile_nav_list li a:hover {
+        color: #c58030;
+    }
+
+    /* Masquer le menu desktop sur téléphone */
+    .header_nav {
+        display: none !important;
     }
 }

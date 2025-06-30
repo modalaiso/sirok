@@ -39,7 +39,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000000000;
+    z-index: 1001;
 }
 
 .header {
@@ -66,6 +66,14 @@ header .header_logo {
     gap: 70px;
     list-style: none;
     font-size: 1.3em;
+}
+
+.nav_list li a:hover {
+    transition: color 0.3s;    
+}
+
+.nav_list li a:hover {
+    color: #c58030
 }
 
 .menu_toggle {
@@ -162,7 +170,7 @@ h2 {
     color: var(--t-color);
     font-family: var(--f-text);
     font-size: 2em;
-    font-weight: 100;
+    font-weight: lighter;
     max-width: 250px;
     margin: 20px 0;
     z-index: 2;
@@ -239,6 +247,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .social-links {
