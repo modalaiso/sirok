@@ -212,6 +212,18 @@ h2 {
     align-items: center;
 }
 
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s cubic-bezier(0, 0, 0.02, 1.07);
+}
+  
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+  
+
 /*see more button*/
 .button {
     display: flex;
