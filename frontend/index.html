@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/card-menu.css">
         <link rel="stylesheet" href="css/carrousel.css">
         <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/popup.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -309,6 +310,27 @@
         <a href="https://pandor.onrender.com" target="_blank" style="text-decoration: none;">
             <p style="text-align: end; margin: 10px; padding: 10px; font-size: 1em; ; color: #9e9e9e; font-family: 'Raleway', sans-serif;">Made by Pandor ⭐</p>  
         </a>
+        <!-- Bouton flottant -->
+<div class="res_floating_btn" id="resToggle">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+      <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+    </svg>
+  </div>
+  
+  <!-- Popup réservation -->
+  <div id="resPopup" class="res_popup">
+    <div class="res_popup_header">
+      <p>Réservation</p>
+      <button id="closeResPopup">&times;</button>
+    </div>
+    <div class="res_popup_body">
+      <a href="reservation.html" class="res_popup_link">Réserver sur le site</a>
+      <a href="reservation.html" class="res_popup_link">Réserver par appel</a>
+      <a href="https://wa.me/225xxxxxxxxx?text=Bonjour%2C+je+souhaite+réserver+une+table+%21" class="res_popup_link" target="_blank">
+        Réserver via WhatsApp
+      </a>
+    </div>
+  </div>
         <!--<script>
             const header = document.querySelector('header');
             const aboutSection = document.querySelector('#about');
@@ -336,5 +358,6 @@
         </script>       
         <script src="js/menu-toggle.js" defer></script>
         <script src="js/reveal.js"></script>
+        <script src="js/popup.js"></script>
     </body>
 </html>
