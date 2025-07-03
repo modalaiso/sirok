@@ -12,4 +12,3 @@ document.addEventListener('DOMContentLoaded', () => {
   
     reveals.forEach(card => observer.observe(card));
   });
-  

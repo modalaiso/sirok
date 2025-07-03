@@ -226,6 +226,7 @@ h2 {
 
 /*see more button*/
 .button {
+    cursor: pointer;
     display: flex;
     align-items: center;
     gap: 10px;
