@@ -335,6 +335,29 @@ footer {
     box-shadow: inset 0px 0px 5px #545454;
 }
 
+.reveal_about {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+  
+.reveal_about.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.reveal_about-img {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+  
+.reveal_about-img.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+  
+
 /* Cacher les flèches de la scrollbar */
 ::-webkit-scrollbar-button {
     display: none;
