@@ -8,6 +8,14 @@
     .header {
         margin: 0 50px;
     }
+
+    .about_img-phone {
+        display: block;
+        max-width: 150px;
+        width: 100%;
+        height: auto;
+        margin-top: 120px;
+    }
     
     /*.header_nav {
         display: none;
@@ -48,6 +56,28 @@
         max-width: 0;
     }
 
+    .reveal_about {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+      
+    .reveal_about.visible {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+    .reveal_about-img {
+        opacity: 0;
+        transform: translateY(-40px);
+        transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+      
+    .reveal_about-img.visible {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
     .div-p_c {
         margin-right: 0;
     }
@@ -70,6 +100,10 @@
     .carousel-container {
         -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 50%, transparent 100%);
         mask-image: linear-gradient(to right, transparent 0%, black 10%, black 50%, transparent 100%);
+    }
+
+    .t-menu {
+        margin-top: 200px;
     }
 
     .fp {

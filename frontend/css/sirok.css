@@ -203,6 +203,11 @@ h2 {
     max-width: 205px;
     width: 100%;
     height: auto;
+    margin-left: 205px;
+}
+
+.about_img-phone {
+    display: none;
 }
 
 /*menu*/
