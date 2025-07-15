@@ -315,7 +315,7 @@ iframe {
 hr {
 	margin: 0 12vh 3vh 12vh;
 	border: none;
-	height: 2px;
+	height: 1px;
 	background: linear-gradient(-45deg, transparent, #808080, transparent);
 }
 
@@ -361,7 +361,6 @@ footer {
     opacity: 1;
     transform: translateX(0);
 }
-  
 
 /* Cacher les flèches de la scrollbar */
 ::-webkit-scrollbar-button {
@@ -397,4 +396,3 @@ footer {
     scrollbar-width: thin;
     scrollbar-color: #c58030 transparent;
 }
-  
