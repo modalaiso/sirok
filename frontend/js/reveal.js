@@ -45,4 +45,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
   reveals.forEach(el => observer.observe(el));
 });
-
